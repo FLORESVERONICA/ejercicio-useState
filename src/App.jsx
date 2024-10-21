@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
 
 const App = () => {
-  // Define el estado inicial para el nombre del profesor
+  
   const [name, setName] = useState('Sofía');
   const [newName, setNewName] = useState('');
 
-  // Función para cambiar el nombre del profesor al hacer clic en un <li>
+
   const handleClick = (professorName) => {
     setName(professorName);
   };
 
-  // Función para manejar el envío del formulario
+
   const changeName = (event) => {
     event.preventDefault();
     if (newName.trim()) {
       setName(newName);
-      setNewName(''); // Restablece el input
+      setNewName('');
     }
   };
 
